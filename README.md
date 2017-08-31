@@ -2,7 +2,7 @@
 
 Quick and dirty firebase source for Gatsby. Allows you to query your firebase data right into your statically generated pages with Gatsby.
 
-[screenshot](./screenshot.png)
+![screenshot](./screenshot.png)
 
 ## Usage
 
