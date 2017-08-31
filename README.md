@@ -38,7 +38,7 @@ module.exports = {
         credential: require("./firebase-key.json"),
 
         // your firebase database root url
-        databaseURL: "https://reactjs-training.firebaseio.com",
+        databaseURL: "https://<your-database>.firebaseio.com",
 
         // you can have multiple "types" that point to different paths
         types: [
