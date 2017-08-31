@@ -5,6 +5,7 @@
   "license": "MIT",
   "keywords": ["gatsby", "gatsby-plugin", "firebase"],
   "author": "Ryan Florence <rpflorence@gmail.com>",
+  "files": ["gatsby-node.js", "README.md"],
   "dependencies": {
     "firebase-admin": "^5.2.1"
   }
