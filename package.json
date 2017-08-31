@@ -6,6 +6,7 @@
   "keywords": ["gatsby", "gatsby-plugin", "firebase"],
   "author": "Ryan Florence <rpflorence@gmail.com>",
   "files": ["gatsby-node.js", "README.md"],
+  "main": "gatsby-node.js",
   "dependencies": {
     "firebase-admin": "^5.2.1"
   }
