@@ -1,0 +1,11 @@
+{
+  "name": "gatsby-source-firebase",
+  "version": "0.0.0",
+  "description": "Gatsby plugin to turn Firebase into a Gatsby data source.",
+  "license": "MIT",
+  "keywords": ["gatsby", "gatsby-plugin", "firebase"],
+  "author": "Ryan Florence <rpflorence@gmail.com>",
+  "dependencies": {
+    "firebase-admin": "^5.2.1"
+  }
+}
