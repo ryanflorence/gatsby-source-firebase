@@ -6,7 +6,7 @@ Quick and dirty firebase source for Gatsby. Allows you to query your firebase da
 
 ## Usage
 
-1. First you need a Private Key from firebase for priviledged enviornments, find out how to get it here: https://firebase.google.com/docs/admin/setup (or click the settings gear > Service accounts tab > Generate New Private Key button at the bottom)
+1. First you need a Private Key from firebase for privileged enviornments, find out how to get it here: https://firebase.google.com/docs/admin/setup (or click the settings gear > Service accounts tab > Generate New Private Key button at the bottom)
 
 2. Place that private key .json file somewhere in your gatsby project (the root is fine).
 
@@ -76,7 +76,7 @@ module.exports = {
             },
           },
 
-          // if you're data is really simple, this should be fine too
+          // if your data is really simple, this should be fine too
           {
             type: "CourseDescriptions",
             path: "text/courseDescriptions",
