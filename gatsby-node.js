@@ -1,10 +1,9 @@
 const firebase = require("firebase-admin")
 const crypto = require("crypto")
 
-exports.sourceNodes = (
+exports.sourceNodes = async (
   { boundActionCreators },
-  { credential, databaseURL, types, quiet = false },
-  done
+  { credential, databaseURL, types, quiet = false }
 ) => {
   const { createNode } = boundActionCreators
 
@@ -17,13 +16,13 @@ exports.sourceNodes = (
 
   const start = Date.now()
 
-  types.forEach(
+  const promises = types.map(
     ({ query = ref => ref, map = node => node, type, path }) => {
       if (!quiet) {
         console.log(`\n[Firebase Source] Fetching data for ${type}...`)
       }
 
-      query(db.ref(path)).once("value", snapshot => {
+      return query(db.ref(path)).once('value').then(snapshot => {
         if (!quiet) {
           console.log(
             `\n[Firebase Source] Data for ${type} loaded in`,
@@ -54,11 +53,12 @@ exports.sourceNodes = (
             })
           )
         })
-        done()
+      }, error => {
+        throw new Error(error)
       })
-    },
-    error => {
-      throw new Error(error)
     }
   )
+
+  return Promise.all(promises)
+
 }
