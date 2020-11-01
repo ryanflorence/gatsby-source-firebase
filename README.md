@@ -51,7 +51,7 @@ module.exports = {
 
             // probably don't want your entire database, use the query option
             // to limit however you'd like
-            query: ref => ref.limitToLast(10)
+            query: ref => ref.limitToLast(10),
 
             // This allows you to map your data to data that GraphQL likes:
             // 1. Turn your lists into actual arrays
