@@ -6,6 +6,12 @@ Quick and dirty firebase source for Gatsby. Allows you to query your firebase da
 
 ## Usage
 
+```
+npm install gatsby-source-firebase
+```
+
+*Note: For older versions of Gatsby (v1, v2) use:* `gatsby-source-firebase@1.0.0`
+
 1. First you need a Private Key from firebase for privileged environments, find out how to get it here: https://firebase.google.com/docs/admin/setup (or click the settings gear > Service accounts tab > Generate New Private Key button at the bottom)
 
 2. Place that private key .json file somewhere in your gatsby project (the root is fine).
