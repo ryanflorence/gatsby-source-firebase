@@ -2,11 +2,11 @@ const firebase = require("firebase-admin")
 const crypto = require("crypto")
 
 exports.sourceNodes = (
-  { boundActionCreators },
+  { actions },
   { credential, databaseURL, types, quiet = false },
   done
 ) => {
-  const { createNode } = boundActionCreators
+  const { createNode } = actions
 
   firebase.initializeApp({
     credential: firebase.credential.cert(credential),
